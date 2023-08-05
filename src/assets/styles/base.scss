@@ -1,0 +1,300 @@
+@import "./variables/colors.module";
+@import "./variables/sizes.module";
+
+// ===== Fonts =====
+@font-face {
+  font-family: iransansBlack;
+  src: url("../fonts/iransans-black.woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: iransansBold;
+  src: url("../fonts/iransans-bold.woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: iransansRegular;
+  src: url("../fonts/iransans-regular.woff");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: iransansWeb;
+  src: url("../fonts/IRANSansWeb.ttf");
+  font-style: normal;
+}
+
+.font-iransansBlack {
+  font-family: iransansBlack !important;
+}
+.font-iransansBold {
+  font-family: iransansBold !important;
+}
+.font-iransansRegular {
+  font-family: iransansRegular !important;
+}
+.font-iransansWeb {
+  font-family: iransansWeb !important;
+}
+
+// ===== Related Css =====
+html {
+  background-color: #efefef;
+  font-family: iransansRegular !important;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+  scrollbar-width: none;
+}
+
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: iransansRegular !important;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.App {
+  min-height: 100vh !important;
+  max-width: 800px;
+  font-family: iransansRegular !important;
+  // background-color: aqua;
+}
+
+.min-h-100vh {
+  min-height: 100vh !important;
+}
+
+input,
+button {
+  outline: none !important;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+div,
+label,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+strong,
+small,
+button,
+input,
+textarea,
+select,
+option,
+optgroupm,
+table,
+tr,
+td,
+th,
+thead,
+tbody,
+tfoot,
+li {
+  // font-family: iransans;
+  font-family: iransansRegular !important;
+  outline: none !important;
+  // font-size: $fontSize-normal;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+.w-100-vw {
+  width: 100vw;
+}
+.h-100-vh {
+  height: 100vh;
+}
+
+.pb-6 {
+  margin-bottom: 6rem !important;
+}
+.pb-7 {
+  margin-bottom: 7rem !important;
+}
+.pb-8 {
+  margin-bottom: 8rem !important;
+}
+.pb-9 {
+  margin-bottom: 9rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 6rem !important;
+}
+.mb-7 {
+  margin-bottom: 6.6rem !important;
+}
+
+.bold {
+  font-weight: 600;
+}
+.text-justify {
+  text-align: justify !important;
+}
+
+.box-rounded-1 {
+  border-radius: 0.75rem !important;
+}
+.box-rounded-2 {
+  border-radius: 1.5rem !important;
+}
+.box-rounded-3 {
+  border-radius: 2.25rem !important;
+}
+.box-rounded-4 {
+  border-radius: 3rem !important;
+}
+
+.input-button-box-height {
+  height: 2.82rem;
+}
+
+// fontWeight classes
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+// fontSize classes
+.fs-7 {
+  font-size: 0.9rem !important;
+}
+.fs-8 {
+  font-size: 0.8rem !important;
+}
+.fs-9 {
+  font-size: 0.7rem !important;
+}
+
+.hidden-scrollbar {
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+  scrollbar-width: none;
+}
+
+.thin-scrollbar {
+  &::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: cornflowerblue;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  standard-user-select: none;
+
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.px-6 {
+  padding-right: 6rem !important;
+  padding-left: 6rem !important;
+}
+
+@media (min-width: 1200px) {
+  .px-xl-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .px-lg-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .px-md-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .px-sm-6 {
+    padding-right: 6rem !important;
+    padding-left: 6rem !important;
+  }
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+.plan-divider {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.divider {
+  width: 98%;
+  height: 2px;
+  border: 1px solid rgb(151, 48, 121, 0.3);
+}
+
+.text-caro-primary {
+  color: $caro-primary;
+}
+
+// Remove Arrows in input
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
